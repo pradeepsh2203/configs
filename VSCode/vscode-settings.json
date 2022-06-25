@@ -1,0 +1,73 @@
+{
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "k"],
+			"after": ["<esc>"]
+		}
+	],
+	"files.eol": "\n",
+	"workbench.colorTheme": "Dracula Soft",
+	"files.exclude": {
+		"**/.__pycache__": true,
+		"**/.git": true,
+		"**/node_modules": true
+	},
+	"editor.formatOnSave": true,
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	"editor.minimap.enabled": false,
+	"explorer.confirmDragAndDrop": false,
+	"workbench.editor.showTabs": true,
+	"terminal.integrated.rendererType": "dom",
+	"breadcrumbs.enabled": true,
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"editor.cursorBlinking": "expand",
+	"editor.wordWrap": "on",
+	"terminal.integrated.tabs.enabled": true,
+	"files.associations": {
+		"*.html": "html"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.fontLigatures": true,
+	"thunder-client.codeSnippetLanguage": "cs-httpclient",
+	"editor.bracketPairColorization.enabled": true,
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
+	"cmake.configureOnOpen": false,
+	"timeline.excludeSources": [],
+	"liveServer.settings.donotShowInfoMsg": true,
+	"gitlens.advanced.messages": {
+		"suppressImproperWorkspaceCasingWarning": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.fontFamily": "'Fira Code',Consolas, 'Courier New', monospace",
+	"editor.cursorSmoothCaretAnimation": true,
+	"window.menuBarVisibility": "visible",
+	"prettier.documentSelectors": ["**/*.{ts,js}"],
+	"window.openWithoutArgumentsInNewWindow": "off",
+	"terminal.integrated.fontFamily": "FuraCode Nerd Font",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"window.zoomLevel": 1,
+	"security.workspace.trust.untrustedFiles": "open",
+	"json.schemas": []
+}

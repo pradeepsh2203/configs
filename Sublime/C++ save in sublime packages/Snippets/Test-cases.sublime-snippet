@@ -1,0 +1,11 @@
+<snippet>
+	<description>Multiple Test Cases</description>
+	<content><![CDATA[
+${1:int} t;
+cin>>t;
+while(t--){
+	${0}
+}]]></content>
+	<tabTrigger>test_case</tabTrigger>
+	<scope>(source.c | source.objc | source.c++ | source.objc++) - meta.preprocessor.include - comment - string</scope>
+</snippet>

@@ -1,0 +1,42 @@
+<snippet>
+	<description>Paste Template Code</description>
+	<content><![CDATA[
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+#define vi vector<int>
+#define pb push_back
+#define pii pair<int,int>
+
+#ifndef ONLINE_JUDGE
+#include "../debugger.h"
+#else
+#define debug(x);
+#endif
+
+${1:bool prime(ll a) {
+	for (int i = 2; i < (ll)sqrt(a) + 1; i++) {
+		if (a % i == 0) return false;
+	\}
+	return true;
+\}
+ll gcd(ll bigger, ll smaller) {
+	if (bigger == 0 || smaller == 0) return 0;
+	if (bigger % smaller == 0) return smaller;
+	return gcd(smaller, bigger % smaller);
+\}
+}
+int main() {
+#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+	freopen("error.txt", "w", stderr);
+#endif
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	${0:/*---code---*/}
+}
+]]></content>
+	<tabTrigger>startcp</tabTrigger>
+	<scope>(source.c | source.objc | source.c++ | source.objc++) - meta.preprocessor.include - comment - string</scope>
+</snippet>

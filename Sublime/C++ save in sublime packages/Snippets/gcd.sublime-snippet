@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+int gcd(int bigger, int smaller) {
+	if (bigger == 0 || smaller == 0) return 0;
+	if (bigger % smaller == 0) return smaller;
+	return gcd(smaller, bigger % smaller);
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gcd()</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

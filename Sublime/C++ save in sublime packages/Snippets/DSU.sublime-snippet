@@ -1,0 +1,39 @@
+<snippet>
+	<description>Disjoin set and union class</description>
+	<content><![CDATA[
+class DSU {
+public:
+	vector<int> parent;
+	vector<int> rank;
+	DSU(int n) {
+		parent = vector<int>(n + 1, -1);
+		rank = vector<int>(n + 1, 1);
+	}
+	int find(int ind) {
+		if (parent[ind] == -1) {
+			return ind;
+		}
+		return parent[ind] = find(parent[ind]);
+	}
+
+	void unionS(int ind1, int ind2) {
+		int s1 = find(ind1);
+		int s2 = find(ind2);
+
+		if (s1 != s2) {
+			if (rank[s1] <= rank[s2]) {
+				parent[s1] = s2;
+				rank[s2] += rank[s1];
+			}
+			else {
+				parent[s2] = s1;
+				rank[s1] += s2;
+			}
+		}
+	}
+
+};
+]]></content>
+	<tabTrigger>DSU-</tabTrigger>
+	<scope>(source.c++ | source.objc++) - meta.preprocessor.include - comment - string</scope>
+</snippet>

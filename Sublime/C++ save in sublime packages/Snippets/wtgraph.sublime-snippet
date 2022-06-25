@@ -1,0 +1,19 @@
+<snippet>
+	<description>WtGraph template</description>
+	<content><![CDATA[
+
+template<typename T, typename T1>
+class wtGraph {
+public:
+	map<T, list<pair<T, T1>>> graph;
+	void addEdge(T x, T y, T1 weight${1:, bool bidir}) {
+		graph[x].push_back({y, weight});
+		${2: if (bidir) }graph[y].push_back({x, weight});
+	}
+	${0}
+};
+
+]]></content>
+	<tabTrigger>wtgrp</tabTrigger>
+	<scope>(source.c | source.objc | source.c++ | source.objc++) - meta.preprocessor.include - comment - string</scope>
+</snippet>

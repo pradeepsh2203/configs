@@ -1,0 +1,22 @@
+<snippet>
+	<description>Graph template</description>
+	<content><![CDATA[
+
+template<typename T>
+class Graph {
+public:
+	map<T, list<T>> graph;
+	${1:void addEdge(T x, T y) {
+		graph[x].push_back(y);
+		graph[y].push_back(x);
+	\}}
+	${2:void addEdge(T x, T y) {
+		graph[x].push_back(y);
+	\}}
+	${0:your code comes here}
+};
+
+]]></content>
+	<tabTrigger>grp</tabTrigger>
+	<scope>(source.c | source.objc | source.c++ | source.objc++) - meta.preprocessor.include - comment - string</scope>
+</snippet>
