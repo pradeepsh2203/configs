@@ -1,73 +1,76 @@
 {
+	// Vim Settings
 	"vim.insertModeKeyBindings": [
 		{
 			"before": ["j", "k"],
 			"after": ["<esc>"]
 		}
 	],
+	"vim.vimrc.enable": true,
+	// Theme Settings
+	"workbench.iconTheme": "material-icon-theme",
+	// Terminal Settings
+	"terminal.integrated.rendererType": "dom",
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
+	"terminal.integrated.fontFamily": "FiraCode Nerd Font Medium",
+	// Editor Settings
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"editor.minimap.enabled": false,
+	"editor.fontLigatures": true,
+	"editor.fontFamily": "'Fira Code',Consolas, 'Courier New', monospace",
+	"editor.cursorBlinking": "expand",
+	"editor.cursorSmoothCaretAnimation": "on",
+	// General Settings
 	"files.eol": "\n",
-	"workbench.colorTheme": "Dracula Soft",
 	"files.exclude": {
 		"**/.__pycache__": true,
 		"**/.git": true,
 		"**/node_modules": true
 	},
-	"editor.formatOnSave": true,
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"workbench.startupEditor": "newUntitledFile",
-	"workbench.editorAssociations": {
-		"*.ipynb": "jupyter.notebook.ipynb"
-	},
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	"editor.minimap.enabled": false,
-	"explorer.confirmDragAndDrop": false,
-	"workbench.editor.showTabs": true,
-	"terminal.integrated.rendererType": "dom",
+	"workbench.editor.showTabs": "multiple",
 	"breadcrumbs.enabled": true,
-	"prettier.useTabs": true,
-	"prettier.tabWidth": 4,
-	"editor.cursorBlinking": "expand",
-	"editor.wordWrap": "on",
-	"terminal.integrated.tabs.enabled": true,
-	"files.associations": {
-		"*.html": "html"
-	},
-	"workbench.iconTheme": "material-icon-theme",
-	"editor.fontLigatures": true,
-	"thunder-client.codeSnippetLanguage": "cs-httpclient",
-	"editor.bracketPairColorization.enabled": true,
-	"terminal.integrated.defaultProfile.windows": "PowerShell",
-	"cmake.configureOnOpen": false,
-	"timeline.excludeSources": [],
-	"liveServer.settings.donotShowInfoMsg": true,
-	"gitlens.advanced.messages": {
-		"suppressImproperWorkspaceCasingWarning": true
-	},
+	"window.menuBarVisibility": "visible",
+	"diffEditor.ignoreTrimWhitespace": false,
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell"
+		},
+		"Command Prompt": {
+			"path": [
+				"${env:windir}\\Sysnative\\cmd.exe",
+				"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Git Bash": {
+			"source": "Git Bash"
+		},
+		"Debian (WSL)": {
+			"path": "C:\\Windows\\System32\\wsl.exe",
+			"args": ["-d", "Debian"]
+		}
 	},
-	"editor.fontFamily": "'Fira Code',Consolas, 'Courier New', monospace",
-	"editor.cursorSmoothCaretAnimation": true,
-	"window.menuBarVisibility": "visible",
-	"prettier.documentSelectors": ["**/*.{ts,js}"],
-	"window.openWithoutArgumentsInNewWindow": "off",
-	"terminal.integrated.fontFamily": "FuraCode Nerd Font",
-	"diffEditor.ignoreTrimWhitespace": false,
-	"window.zoomLevel": 1,
-	"security.workspace.trust.untrustedFiles": "open",
-	"json.schemas": []
+	// Prettier settings
+	"prettier.singleAttributePerLine": false,
+	"prettier.bracketSameLine": true,
+	"prettier.endOfLine": "lf",
+	"prettier.proseWrap": "never",
+	// c++ formatting settings
+	"C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 2, TabWidth: 2, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -2 }",
+	"cmake.pinnedCommands": [
+		"workbench.action.tasks.configureTaskRunner",
+		"workbench.action.tasks.runTask"
+	],
+	"gitlens.mode.active": "zen",
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
